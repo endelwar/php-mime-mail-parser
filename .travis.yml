@@ -29,6 +29,3 @@ script:
     - ./vendor/bin/phpunit --coverage-text --coverage-clover build/logs/clover.xml
     - ./vendor/bin/phpcs src --standard=psr2
     - ./vendor/bin/phpcs tests --standard=psr2
-
-after_script:
-    - ./vendor/bin/coveralls -v
